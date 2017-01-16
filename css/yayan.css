@@ -113,10 +113,8 @@ body {
 .subtitle.is-3 {
     margin: 6px;
 }
-
-.image.is-128x128 {
-    height: 128px;
-    width: 0px;
+.fa-1 {
+    font-size: 50px;
 }
 
 .yanz-margin {
