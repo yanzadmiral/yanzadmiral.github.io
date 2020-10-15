@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>kumpulanhaji-columns</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900" rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min4.2.1.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot4.2.1.css">
+
+    <!-- Sidebar Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="cpswitch" href="css/caribbean-green.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Owl Carousel Stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <!-- Magnific Gallery -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+        <!--====== LOADER =====-->
+        <div class="loader"></div>
+
+        <!--======== SEARCH-OVERLAY =========-->
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="float-left" type="text" placeholder="Search.." name="search">
+                            <button class="float-left" type="submit"><i class="fa fa-search"></i></button>
+                        </div><!-- end input-group -->
+                    </div><!-- end form-group -->
+                </form>
+
+            </div><!-- end overlay-content -->
+        </div><!-- end overlay -->
+
+
+        <!-- nav -->
+        <section>
+            <div id="top-bar" class="tb-text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div id="info">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><span><i class="fa fa-map-marker"></i></span>Umrota
+                                        Bandung JawaBarat</li>
+                                    <li class="list-inline-item"><span><i class="fa fa-phone"></i></span>085795815678
+                                    </li>
+                                </ul>
+                            </div><!-- end info -->
+                        </div><!-- end columns -->
+                        <div class="col-12 col-md-6">
+                            <div id="links">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href="#" data-toggle="modal"
+                                            data-target="#login"><span><i class="fa fa-lock"></i></span>Login</a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="#" data-toggle="modal"
+                                            data-target="#reg1"><span><i class="fa fa-plus"></i></span>Sign Up
+                                            Member</a></li>
+                                    <li class="list-inline-item"><a href="#" data-toggle="modal"
+                                            data-target="#reg2"><span><i class="fa fa-plus"></i></span>Sign Up
+                                            Perusahaan</a></li>
+                                </ul>
+                            </div><!-- end links -->
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end top-bar -->
+            <nav class="navbar navbar-expand-xl sticky-top navbar-custom main-navbar p-1" id="mynavbar-1">
+                <div class="container">
+
+                    <a href="#" class="navbar-brand py-1 m-0"><span><i class="fa fa-plane"></i>UMROTA</a>
+                    <div class="header-search d-xl-none my-auto ml-auto py-1">
+                        <a href="#" class="search-button" onclick="openSearch()"><span><i
+                                    class="fa fa-search"></i></span></a>
+                    </div>
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" id="sidebarCollapse">
+                        <i class="fa fa-navicon py-1"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="navbar-nav ml-auto navbar-search-link">
+                            <li class="nav-item active">
+                                <a href="index.html" class="nav-link">Beranda<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="umroh.html" class="nav-link">Umroh<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="haji.html" class="nav-link">Haji<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="travel.html" class="nav-link" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Informasi<span></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a href="infohaji.html" class="dropdown-item">Informasi Haji</a></li>
+                                    <li><a href="infoumroh.html" class="dropdown-item">Informasi Umroh</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="berita.html" class="nav-link">Berita<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="event.html" class="nav-link">Event<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="promoall.html" class="nav-link">Promo<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="kontak.html" class="nav-link">Kontak<span></span></a>
+                            </li>
+                            <li class="dropdown-item search-btn">
+
+                            </li>
+                        </ul>
+                    </div><!-- end navbar collapse -->
+                </div><!-- End container -->
+            </nav>
+            <div class="sidenav-content">
+                <!-- Sidebar  -->
+                <nav id="sidebar" class="sidenav">
+                    <h2 id="web-name"><span><i class="fa fa-plane"></i></span>Star Travel</h2>
+
+                    <div id="main-menu">
+                        <div id="dismiss">
+                            <button class="btn" id="closebtn">&times;</button>
+                        </div>
+                        <div class="list-group panel">
+                            <a href="#home-links" class="items-list" data-toggle="collapse" aria-expanded="false">
+
+                        </div><!-- End list-group panel -->
+                    </div><!-- End main-menu -->
+                </nav>
+            </div><!-- End sidenav-content -->
+        </section>
+        <!-- end nav -->
+
+        <section class="innerpage-wrapper">
+            <div id="about-us">
+                <div id="about-content" class="section-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="flex-content">
+                                    <div class="flex-content-img about-img">
+                                        <img src="images/about-us.jpg" class="img-fluid" alt="about-img" />
+                                    </div><!-- end about-img -->
+                                    <div class="about-text">
+                                        <div class="about-detail">
+                                            <h2>Tentang Umrota</h2>
+                                            <p>Lorem ipsum dolor sit amet, conse adipiscing elit. Curabitur metus felis,
+                                                venenatis eu ultricies vel, vehicula eu urna. Phasellus eget augue id
+                                                est fringilla feugiat id a tellus. Sed hendrerit quam sed ante euismod
+                                                posuere ultricies. Vestibulum suscipit convallis purus ut mattis. In
+                                                eget turpis eget urna molestie ultricies in sagittis nunc. Sed accumsan
+                                                leo in mauris rhoncus volutpat.</p>
+                                            <p>Iuvaret detraxit disputando vel ea, ut virtute per.Lorem ipsum dolor si
+                                                Iuvaret detraxit. disputando velr.Lorem ipsum dolor si. Lorem ipsum
+                                                dolor sit amet, ad duo fugit aeque fabulas, pro an eros perpetua
+                                                ullamcorper.</p>
+                                        </div><!-- end about-detail -->
+                                    </div><!-- end about-text -->
+                                </div><!-- end flex-content -->
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+                    </div><!-- end container -->
+                </div><!-- end about-content -->
+                <div id="team" class="section-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-heading">
+                                    <h2>Di balik Umrota</h2>
+                                    <hr class="heading-line" />
+                                </div><!-- end page-heading -->
+                                <div class="owl-carousel owl-theme" id="owl-team">
+                                    <div class="item">
+                                        <div class="member-block">
+                                            <div class="member-img">
+                                                <img src="images/team-member-1.jpg" class="img-fluid rounded-circle"
+                                                    alt="member-img" />
+                                                <ul class="list-unstyled list-inline contact-links">
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-facebook-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-twitter-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-linkedin-square"></i></span></a></li>
+                                                </ul>
+                                            </div><!-- end member-img -->
+                                            <div class="member-name">
+                                                <h3>nama ustad 1</h3>
+                                                <p>Ustad</p>
+                                            </div><!-- end member-name -->
+                                        </div><!-- end member-block -->
+                                    </div><!-- end item -->
+                                    <div class="item">
+                                        <div class="member-block">
+                                            <div class="member-img">
+                                                <img src="images/team-member-2.jpg" class="img-fluid rounded-circle"
+                                                    alt="member-img" />
+                                                <ul class="list-unstyled list-inline contact-links">
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-facebook-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-twitter-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-linkedin-square"></i></span></a></li>
+                                                </ul>
+                                            </div><!-- end member-img -->
+                                            <div class="member-name">
+                                                <h3>nama ustad 1</h3>
+                                                <p>Ustad</p>
+                                            </div><!-- end member-name -->
+                                        </div><!-- end member-block -->
+                                    </div><!-- end item -->
+                                    <div class="item">
+                                        <div class="member-block">
+                                            <div class="member-img">
+                                                <img src="images/team-member-3.jpg" class="img-fluid rounded-circle"
+                                                    alt="member-img" />
+                                                <ul class="list-unstyled list-inline contact-links">
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-facebook-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-twitter-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-linkedin-square"></i></span></a></li>
+                                                </ul>
+                                            </div><!-- end member-img -->
+                                            <div class="member-name">
+                                                <h3>nama ustad 1</h3>
+                                                <p>Ustad</p>
+                                            </div><!-- end member-name -->
+                                        </div><!-- end member-block -->
+                                    </div><!-- end item -->
+                                    <div class="item">
+                                        <div class="member-block">
+                                            <div class="member-img">
+                                                <img src="images/team-member-4.jpg" class="img-fluid rounded-circle"
+                                                    alt="member-img" />
+                                                <ul class="list-unstyled list-inline contact-links">
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-facebook-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-twitter-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-linkedin-square"></i></span></a></li>
+                                                </ul>
+                                            </div><!-- end member-img -->
+                                            <div class="member-name">
+                                                <h3>nama ustad 1</h3>
+                                                <p>Ustad</p>
+                                            </div><!-- end member-name -->
+                                        </div><!-- end member-block -->
+                                    </div><!-- end item -->
+                                    <div class="item">
+                                        <div class="member-block">
+                                            <div class="member-img">
+                                                <img src="images/team-member-5.jpg" class="img-fluid rounded-circle"
+                                                    alt="member-img" />
+                                                <ul class="list-unstyled list-inline contact-links">
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-facebook-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-twitter-square"></i></span></a></li>
+                                                    <li class="list-inline-item"><a href="#"><span><i
+                                                                    class="fa fa-linkedin-square"></i></span></a></li>
+                                                </ul>
+                                            </div><!-- end member-img -->
+                                            <div class="member-name">
+                                                <h3>nama ustad 1</h3>
+                                                <p>Ustad</p>
+                                            </div><!-- end member-name -->
+                                        </div><!-- end member-block -->
+                                    </div><!-- end item -->
+                                </div><!-- end owl-team -->
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+                    </div><!-- end container -->
+                </div><!-- end team -->
+            </div><!-- end about-us -->
+        </section><!-- end innerpage-wrapper -->
+
+        <!--===== INNERPAGE-LOGIN ====-->
+        <section class="innerpage-wrapper">
+            <div id="popup-ad-page" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div id="login" class="modal fade" role="dialog">
+                                <div class="modal-dialog umrotaloginmodal">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                style="right:-10px; color:black">&times;</button>
+
+                                            <div class="row">
+                                                <div class="custom-form custom-form-fields umrotaloginmodal2">
+                                                    <h3>Login</h3>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Username" required />
+                                                            <span><i class="fa fa-user"></i></span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Password" required />
+                                                            <span><i class="fa fa-lock"></i></span>
+                                                        </div>
+
+                                                        <div class="checkbox">
+                                                            <label><input type="checkbox"> Remember me</label>
+                                                        </div>
+
+                                                        <button class="btn btn-orange btn-block">Login</button>
+                                                    </form>
+
+                                                    <div class="other-links">
+                                                        <p class="link-line">New Here ? <a href="#">Signup</a></p>
+                                                        <a class="simple-link" href="#">Forgot Password ?</a>
+                                                    </div><!-- end other-links -->
+                                                </div><!-- end custom-form -->
+                                            </div><!-- end row -->
+
+                                        </div><!-- end modal-bpdy -->
+                                    </div><!-- end modal-content -->
+                                </div><!-- end modal-dialog -->
+                            </div><!-- end popup-ad -->
+
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end popup-ad-page -->
+        </section><!-- end innerpage-wrapper -->
+
+        <!--===== INNERPAGE-reg ====-->
+        <section class="innerpage-wrapper">
+            <div id="popup-ad-page" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div id="reg1" class="modal fade" role="dialog">
+                                <div class="modal-dialog umrotaloginmodal">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                style="right:-10px; color:black">&times;</button>
+
+                                            <div class="row">
+                                                <div class="custom-form custom-form-fields umrotaloginmodal2">
+                                                    <h3>Pendaftaran</h3>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Username" required />
+                                                            <span><i class="fa fa-user"></i></span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" placeholder="Email"
+                                                                required />
+                                                            <span><i class="fa fa-envelope"></i></span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Password" required />
+                                                            <span><i class="fa fa-lock"></i></span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Confirm Password" required />
+                                                            <span><i class="fa fa-lock"></i></span>
+                                                        </div>
+
+                                                        <button class="btn btn-orange btn-block">Daftar</button>
+                                                    </form>
+
+                                                    <div class="other-links">
+                                                        <p class="link-line">Sudah Punya Akun ? <a href="#">Login Di
+                                                                Sini</a></p>
+                                                    </div><!-- end other-links -->
+                                                </div><!-- end custom-form -->
+                                            </div><!-- end row -->
+
+                                        </div><!-- end modal-bpdy -->
+                                    </div><!-- end modal-content -->
+                                </div><!-- end modal-dialog -->
+                            </div><!-- end popup-ad -->
+
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end popup-ad-page -->
+        </section><!-- end innerpage-wrapper -->
+
+        <!--===== INNERPAGE-reg2 ====-->
+        <section class="innerpage-wrapper">
+            <div id="popup-ad-page" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div id="reg2" class="modal fade" role="dialog">
+                                <div class="modal-dialog umrotaloginmodal">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                style="right:-10px; color:black">&times;</button>
+
+                                            <div class="row">
+                                                <div class="custom-form custom-form-fields umrotaloginmodal2">
+                                                    <h3>Pendaftaran</h3>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Username" required />
+                                                            <span><i class="fa fa-user"></i></span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" placeholder="Email"
+                                                                required />
+                                                            <span><i class="fa fa-envelope"></i></span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Password" required />
+                                                            <span><i class="fa fa-lock"></i></span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Confirm Password" required />
+                                                            <span><i class="fa fa-lock"></i></span>
+                                                        </div>
+
+                                                        <button class="btn btn-orange btn-block">Daftar</button>
+                                                    </form>
+
+                                                    <div class="other-links">
+                                                        <p class="link-line">Sudah Punya Akun ? <a href="#">Login Di
+                                                                Sini</a></p>
+                                                    </div><!-- end other-links -->
+                                                </div><!-- end custom-form -->
+                                            </div><!-- end row -->
+
+                                        </div><!-- end modal-bpdy -->
+                                    </div><!-- end modal-content -->
+                                </div><!-- end modal-dialog -->
+                            </div><!-- end popup-ad -->
+
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end popup-ad-page -->
+        </section><!-- end innerpage-wrapper -->
+
+        <!--======================= FOOTER =======================-->
+        <section id="footer" class="ftr-heading-w ftr-heading-mgn-2">
+
+            <div id="footer-top" class="banner-padding ftr-top-grey ftr-text-grey">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-md-12 col-lg-5 col-xl-5 footer-widget ftr-about ftr-our-company">
+                            <h3 class="footer-heading">Tentang Umrota</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit.</p>
+                            <ul class="social-links list-inline list-unstyled">
+                                <li class="list-inline-item"><a href="#"><span><i class="fa fa-facebook"></i></span></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#"><span><i class="fa fa-twitter"></i></span></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#"><span><i
+                                                class="fa fa-google-plus"></i></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span><i
+                                                class="fa fa-pinterest-p"></i></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span><i
+                                                class="fa fa-instagram"></i></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span><i class="fa fa-linkedin"></i></span></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#"><span><i
+                                                class="fa fa-youtube-play"></i></span></a></li>
+                            </ul>
+                        </div><!-- end columns -->
+
+                        <div class="col-12 col-md-12 col-lg-7 col-xl-7 footer-widget ftr-map">
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.671373430605!2d106.81819471266026!3d-6.175203315647456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2db8c5617%3A0x4e446b7ac891d847!2sMonas%2C+Gambir%2C+Kota+Jakarta+Pusat%2C+Daerah+Khusus+Ibukota+Jakarta!5e0!3m2!1sen!2sid!4v1554308889113!5m2!1sen!2sid"
+                                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div><!-- end columns -->
+
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-top -->
+
+            <div id="footer-bottom" class="ftr-bot-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
+                            <p>© 2019 <a href="#">Umrota</a>. All rights reserved.</p>
+                        </div><!-- end columns -->
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><a href="#">Terms & Condition</a></li>
+                                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-bottom -->
+
+        </section><!-- end footer -->
+    </div>
+
+
+    <!-- Page Scripts Starts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap.min4.2.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-owl.js"></script>
+    <script src="js/custom-video.js"></script>
+    <!-- Page Scripts Ends -->
+</body>
+
+</html>
